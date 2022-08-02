@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "version": "0.1.0",
+  "name": "YouTube RSS Feed Generator",
+  "description": "__MSG_description__",
+  "default_locale": "en",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "declarativeContent"
+  ],
+  "icons": {
+    "16": "data/icons/16.png",
+    "32": "data/icons/32.png",
+    "48": "data/icons/48.png",
+    "64": "data/icons/64.png",
+    "128": "data/icons/128.png",
+    "256": "data/icons/256.png",
+    "512": "data/icons/512.png"
+  },
+  "background": {
+    "service_worker": "worker.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "data/icons/disabled/16.png",
+      "32": "data/icons/disabled/32.png",
+      "48": "data/icons/disabled/48.png"
+    }
+  },
+  "commands": {
+    "_execute_action": {
+      "description": "Press the action button"
+    }
+  }
+}
